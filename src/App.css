@@ -93,6 +93,12 @@ img {
     text-align: center;
 }
 
+.menuMobile .informations .informations-prime a,
+.menuMobile .options-food a {
+    text-decoration: none;
+    color: black;
+}
+
 .menuMobile .informations .informations-prime .location,
 .menuMobile .informations .informations-prime .telefone {
     padding: 0 3.7rem;

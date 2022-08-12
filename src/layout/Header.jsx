@@ -51,11 +51,19 @@ function Header() {
                             <div className="informations-prime">
                                 <div className="location">
                                     <LocationIcon />
-                                    <p>Location</p>
+                                    <p>
+                                        <a href="https://www.google.com.br/maps/place/S%C3%A3o+Paulo,+SP/">
+                                            Location
+                                        </a>
+                                    </p>
                                 </div>
                                 <div className="telefone">
                                     <TelefoneIcon />
-                                    <p>Telefone</p>
+                                    <p>
+                                        <a href="tel:+5511945232656">
+                                            Telefone
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +72,9 @@ function Header() {
                             <ul>
                                 <li>
                                     <WhatsAppIcon />
-                                    WhatsApp
+                                    <a href="https://linkwhats.app/c718c9">
+                                        WhatsApp
+                                    </a>
                                 </li>
                                 <li>
                                     <InstagramIcon /> Instagram
