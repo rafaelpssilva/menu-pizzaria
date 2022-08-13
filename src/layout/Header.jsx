@@ -1,19 +1,16 @@
 import React from "react";
-import MenuIcon from "../assests/icons/MenuIcon";
-import LogoIcon from "../assests/icons/LogoIcon.png";
-import CloseMenuIcon from "../assests/icons/CloseMenuIcon";
-import LocationIcon from "../assests/icons/LocationIcon";
-import TelefoneIcon from "../assests/icons/TelefoneIcon";
 
-// SOCIAL
-import WhatsAppIcon from "../assests/icons/social/WhatsAppIcon";
+// ICON
 import WhatsappIcon from "../assests/icons/WhatsappIcon";
-import InstagramIcon from "../assests/icons/social/InstagramIcon";
-import FacebookIcon from "../assests/icons/social/FacebookIcon";
-import TwitterIcon from "../assests/icons/social/TwitterIcon";
+import MenuMobile from "./MenuMobile";
+import MenuIcon from "../assests/icons/MenuIcon";
 
 function Header() {
     const [openMenu, setOpenMenu] = React.useState(false);
+
+    function toogleMenu() {
+        setOpenMenu(!openMenu);
+    }
 
     if (openMenu) {
         document.body.style.overflow = "hidden";
@@ -23,80 +20,44 @@ function Header() {
         document.body.style.overflow = "auto";
     }
 
+    function introductoryMessage() {
+        let currentTime = new Date();
+
+        let hours = currentTime.getHours();
+
+        if (hours > 0 && hours < 5) {
+            return "Boa madrugada, qual será o pedido de hoje?";
+        } else if (hours >= 5 && hours < 13) {
+            return "Boa dia, qual será o pedido de hoje?";
+        } else if (hours >= 13 && hours < 18) {
+            return "Boa tarde, qual será o pedido de hoje?";
+        } else if (hours >= 18 && hours <= 23) {
+            return "Boa noite, qual será o pedido de hoje?";
+        }
+    }
+
     return (
         <header id="header" className="wrapper">
             <div className="menu">
-                <div
-                    className="menuBox"
-                    onClick={() => {
-                        setOpenMenu(!openMenu);
-                        console.log(openMenu);
-                    }}
-                >
+                <div className="menuBox" onClick={() => toogleMenu()}>
                     <MenuIcon />
                 </div>
-                {openMenu && (
-                    <div className="menuMobile">
-                        <div
-                            className="menuBox"
-                            onClick={() => {
-                                setOpenMenu(!openMenu);
-                                console.log(openMenu);
-                            }}
-                        >
-                            <MenuIcon />
-                        </div>
-                        <div className="informations">
-                            <h1 className="logo">Pizzaria</h1>
-                            <div className="informations-prime">
-                                <div className="location">
-                                    <LocationIcon />
-                                    <p>
-                                        <a href="https://www.google.com.br/maps/place/S%C3%A3o+Paulo,+SP/">
-                                            Location
-                                        </a>
-                                    </p>
-                                </div>
-                                <div className="telefone">
-                                    <TelefoneIcon />
-                                    <p>
-                                        <a href="tel:+5511945232656">
-                                            Telefone
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="options-food">
-                            <h3>Redes Sociais</h3>
-                            <ul>
-                                <li>
-                                    <WhatsAppIcon />
-                                    <a href="https://linkwhats.app/c718c9">
-                                        WhatsApp
-                                    </a>
-                                </li>
-                                <li>
-                                    <InstagramIcon /> Instagram
-                                </li>
-                                <li>
-                                    <FacebookIcon /> Facebook
-                                </li>
-                                <li>
-                                    <TwitterIcon /> Twitter
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                )}
-                <div className="menuLogo">
+
+                <div className="menuWathsap">
                     <a href="https://linkwhats.app/c718c9">
                         <WhatsappIcon />
                     </a>
                 </div>
             </div>
+
+            {openMenu && (
+                <div id="menuMobile">
+                    <MenuMobile toogleMenu={toogleMenu} />
+                </div>
+            )}
+
             <div className="title-message">
-                <h2>Boa noite, qual será o pedido de hoje?</h2>
+                <h2>{introductoryMessage()}</h2>
             </div>
         </header>
     );
