@@ -5,8 +5,6 @@ import { GlobalContext } from "../GlobalContext";
 function Home() {
     const { selectedFilter } = React.useContext(GlobalContext);
 
-    let currentTime = new Date();
-
     const productsReturn = dataProducts.map(
         ({ id, title, price, image, category }) =>
             selectedFilter === "" ? (
@@ -25,6 +23,8 @@ function Home() {
                 )
             )
     );
+
+    // const productsSelected = <div>{dadosProduct && dadosProduct[0].title}</div>;
 
     return (
         <section id="home" className="wrapper">

@@ -45,7 +45,7 @@ function Header() {
 
                 <div className="menuWathsap">
                     <a href="https://linkwhats.app/c718c9">
-                        <WhatsappIcon />
+                        <WhatsappIcon width={24} />
                     </a>
                 </div>
             </div>

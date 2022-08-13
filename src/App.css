@@ -226,3 +226,37 @@ img {
     text-align: center;
     padding-top: 5rem;
 }
+
+#footer .about {
+    margin: 1rem 0 3rem 0;
+}
+
+#footer .about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+#footer .about p {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+#footer .contact ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer .contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#footer .footerSocialMedia ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

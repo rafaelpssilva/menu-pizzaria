@@ -8,7 +8,7 @@ function Informations() {
             <h1 className="logo">Pizzaria</h1>
             <div className="informations-prime">
                 <div className="location">
-                    <LocationIcon />
+                    <LocationIcon width={54} height={54} />
                     <p>
                         <a href="https://www.google.com.br/maps/place/S%C3%A3o+Paulo,+SP/">
                             Location
@@ -16,7 +16,7 @@ function Informations() {
                     </p>
                 </div>
                 <div className="telefone">
-                    <TelefoneIcon />
+                    <TelefoneIcon width={54} height={54} />
                     <p>
                         <a href="tel:+5511945232656">Telefone</a>
                     </p>

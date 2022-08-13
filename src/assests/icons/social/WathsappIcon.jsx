@@ -1,6 +1,6 @@
 import React from "react";
 
-function WathsappIcon() {
+function WathsappIcon({ width, height }) {
     return (
         <svg
             width="34"

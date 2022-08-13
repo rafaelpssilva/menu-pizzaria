@@ -10,17 +10,17 @@ function SocialMedia() {
             <h3>Redes Sociais</h3>
             <ul>
                 <li>
-                    <WhatsAppIcon />
+                    <WhatsAppIcon width={24} height={24} />
                     <a href="https://linkwhats.app/c718c9">WhatsApp</a>
                 </li>
                 <li>
-                    <InstagramIcon /> Instagram
+                    <InstagramIcon width={24} height={24} /> Instagram
                 </li>
                 <li>
-                    <FacebookIcon /> Facebook
+                    <FacebookIcon width={24} height={24} /> Facebook
                 </li>
                 <li>
-                    <TwitterIcon /> Twitter
+                    <TwitterIcon width={24} height={24} /> Twitter
                 </li>
             </ul>
         </div>
