@@ -160,8 +160,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    transition: 0.3s all;
 }
 
 #navbar ul li p {
@@ -259,4 +257,8 @@ img {
 
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.area-1 {
+    visibility: hidden;
 }

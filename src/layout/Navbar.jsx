@@ -21,7 +21,7 @@ function Navbar() {
             icon: <DrinkIcon />,
         },
         {
-            title: "French fries",
+            title: "Potato",
             icon: <FrenchFriesIcon />,
         },
         {
@@ -34,7 +34,7 @@ function Navbar() {
         React.useContext(GlobalContext);
 
     return (
-        <nav id="navbar" className="wrapper">
+        <nav id="navbar" className="wrapper area-1">
             <ul>
                 {categories.map(({ icon, title }) => (
                     <li key={title} onClick={() => setSelectedFilter(title)}>
