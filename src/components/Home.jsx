@@ -11,6 +11,7 @@ function Home() {
                 <div key={id + Math.random()} className="products">
                     <img src={image} alt="title" />
                     <p className="name-product">{title}</p>
+
                     <p className="price-product">R$ {price}</p>
                 </div>
             ) : (
