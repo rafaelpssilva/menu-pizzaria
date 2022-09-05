@@ -28,7 +28,7 @@ function Header() {
         if (hours > 0 && hours < 5) {
             return "Boa madrugada, qual será o pedido de hoje?";
         } else if (hours >= 5 && hours < 13) {
-            return "Boa dia, qual será o pedido de hoje?";
+            return "Bom dia, qual será o pedido de hoje?";
         } else if (hours >= 13 && hours < 18) {
             return "Boa tarde, qual será o pedido de hoje?";
         } else if (hours >= 18 && hours <= 23) {
