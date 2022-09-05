@@ -222,14 +222,6 @@ img {
     font-size: 1.2rem;
 }
 
-#home .box-products .products .img-product {
-    display: block;
-
-    height: 11.5rem;
-
-    object-fit: fill;
-}
-
 .coming-soon {
     color: #232323;
     font-size: 2rem;
