@@ -11,7 +11,7 @@ function Informations() {
                     <LocationIcon width={54} height={54} />
                     <p>
                         <a href="https://www.google.com.br/maps/place/S%C3%A3o+Paulo,+SP/">
-                            Location
+                            Localização
                         </a>
                     </p>
                 </div>

@@ -172,6 +172,10 @@ img {
     margin-top: 0.3rem;
 }
 
+#navbar .navbar-options {
+    cursor: pointer;
+}
+
 /* HOME */
 
 #home h3 {
@@ -216,6 +220,34 @@ img {
     color: var(--third-color);
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+#home .box-products .products .img-product {
+    display: block;
+
+    height: 11.5rem;
+
+    object-fit: fill;
+}
+
+.coming-soon {
+    color: #232323;
+    font-size: 2rem;
+    display: block;
+    line-height: 5rem;
+}
+
+.entre-em-contato a {
+    color: #272727;
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 4vh;
+    text-decoration: none;
+}
+
+.entre-em-contato a:hover {
+    color: #f66141;
+    text-decoration: underline 0.2rem;
 }
 
 /* Footer */
