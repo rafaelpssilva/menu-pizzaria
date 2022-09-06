@@ -38,7 +38,7 @@ function Navbar() {
             <ul>
                 {categories.map(({ icon, title }) => (
                     <li
-                        class="navbar-options"
+                        className="navbar-options"
                         key={title}
                         onClick={() => setSelectedFilter(title)}
                     >

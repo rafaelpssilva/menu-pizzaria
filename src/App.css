@@ -234,7 +234,10 @@ img {
     font-size: 1.5rem;
     display: block;
     padding-bottom: 4vh;
-    text-decoration: none;
+    transition: 0.5s;
+    text-decoration: underline 0.1rem;
+
+    margin-bottom: 15vh;
 }
 
 .entre-em-contato a:hover {
@@ -263,6 +266,16 @@ img {
     font-size: 1.5rem;
 }
 
+#footer .about .img-pizzaria {
+    display: block;
+    margin: 2.5rem 0 0 0;
+    border-radius: 1rem;
+}
+
+.about-slider {
+    margin-bottom: 4rem;
+}
+
 #footer .contact ul {
     display: flex;
     justify-content: space-around;
@@ -280,5 +293,5 @@ img {
     justify-content: space-evenly;
 
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }

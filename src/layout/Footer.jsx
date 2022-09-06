@@ -6,9 +6,32 @@ import TwitterIcon from "../assests/icons/social/TwitterIcon";
 import WhatsAppIcon from "../assests/icons/social/WhatsAppIcon";
 import TelefoneIcon from "../assests/icons/TelefoneIcon";
 
+import PizzariaImg from "../assests/products/pizzaria.jpg";
+
+import Slider from "react-slick";
+
 function Footer() {
+    let settings = {
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
+
     return (
         <footer id="footer" className="wrapper">
+            <link
+                rel="stylesheet"
+                type="text/css"
+                charset="UTF-8"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+            />
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+            />
             <div className="about">
                 <h2>Sobre nós</h2>
                 <p>
@@ -17,6 +40,37 @@ function Footer() {
                     quidem iure repellendus est voluptas nostrum, nihil
                     repudiandae autem sed vitae, fugit dicta?
                 </p>
+
+                <Slider {...settings} className="about-slider">
+                    <div>
+                        <img
+                            className="img-pizzaria"
+                            src={PizzariaImg}
+                            alt=" foto do estabelecimento"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            className="img-pizzaria"
+                            src="https://cdn.pixabay.com/photo/2016/08/25/19/38/baker-1620504_960_720.jpg"
+                            alt=" foto do estabelecimento"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            className="img-pizzaria"
+                            src="https://cdn.pixabay.com/photo/2018/04/11/03/13/food-3309419_960_720.jpg"
+                            alt=" foto do estabelecimento"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            className="img-pizzaria"
+                            src="https://cdn.pixabay.com/photo/2021/09/02/13/36/pizza-6593504_960_720.jpg"
+                            alt=" foto do estabelecimento"
+                        />
+                    </div>
+                </Slider>
             </div>
             <div className="contact">
                 <ul>
