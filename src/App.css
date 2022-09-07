@@ -148,10 +148,12 @@ img {
 #navbar ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 7px 0px;
 }
 
 #navbar ul li {
-    width: 6rem;
+    width: 5.7rem;
     height: 6rem;
 
     border: 1px solid var(--primary-color);
@@ -299,5 +301,4 @@ img {
     justify-content: space-evenly;
 
     margin-top: 2rem;
-    margin-bottom: 4rem;
 }

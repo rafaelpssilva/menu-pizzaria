@@ -7,35 +7,38 @@ import VeggiesIcon from "../assests/icons/VeggiesIcon";
 import { GlobalContext } from "../GlobalContext";
 
 function Navbar() {
-    const categories = [
-        {
-            title: "Pizza",
-            icon: <PizzaIcon />,
-        },
-        {
-            title: "Burger",
-            icon: <HamburguerIcon />,
-        },
-        {
-            title: "Drink",
-            icon: <DrinkIcon />,
-        },
-        {
-            title: "Fries",
-            icon: <FrenchFriesIcon />,
-        },
-        {
-            title: "Veggies",
-            icon: <VeggiesIcon />,
-        },
-    ];
-
     const { selectedFilter, setSelectedFilter } =
         React.useContext(GlobalContext);
 
+    const setColorIcon = (categorie) =>
+        selectedFilter === categorie ? true : false;
+
+    const categories = [
+        {
+            title: "Pizza",
+            icon: <PizzaIcon color={setColorIcon("Pizza")} />,
+        },
+        {
+            title: "Burger",
+            icon: <HamburguerIcon color={setColorIcon("Burger")} />,
+        },
+        {
+            title: "Drink",
+            icon: <DrinkIcon color={setColorIcon("Drink")} />,
+        },
+        {
+            title: "Fries",
+            icon: <FrenchFriesIcon color={setColorIcon("Fries")} />,
+        },
+        {
+            title: "Veggies",
+            icon: <VeggiesIcon color={setColorIcon("Veggies")} />,
+        },
+    ];
+
     return (
         <nav id="navbar" className="wrapper">
-            <ul>
+            <ul className="filter-group">
                 {categories.map(({ icon, title }) => (
                     <li
                         className="navbar-options"
