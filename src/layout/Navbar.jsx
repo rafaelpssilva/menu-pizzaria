@@ -6,6 +6,7 @@ import FrenchFriesIcon from "../assests/icons/FrenchFriesIcon";
 import VeggiesIcon from "../assests/icons/VeggiesIcon";
 import { GlobalContext } from "../GlobalContext";
 
+import Fade from "react-reveal/Fade";
 function Navbar() {
     const { selectedFilter, setSelectedFilter } =
         React.useContext(GlobalContext);
@@ -39,16 +40,18 @@ function Navbar() {
     return (
         <nav id="navbar" className="wrapper">
             <ul className="filter-group">
-                {categories.map(({ icon, title }) => (
-                    <li
-                        className="navbar-options"
-                        key={title}
-                        onClick={() => setSelectedFilter(title)}
-                    >
-                        {icon}
-                        <p>{title}</p>
-                    </li>
-                ))}
+                <Fade left>
+                    {categories.map(({ icon, title }) => (
+                        <li
+                            className="navbar-options"
+                            key={title}
+                            onClick={() => setSelectedFilter(title)}
+                        >
+                            {icon}
+                            <p>{title}</p>
+                        </li>
+                    ))}
+                </Fade>
             </ul>
         </nav>
     );

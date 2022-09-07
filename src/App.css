@@ -77,6 +77,10 @@ img {
     left: 0;
     right: 0;
     top: 0;
+
+    z-index: 4;
+
+    transition: 10s;
 }
 
 #menuMobile .informations h1 {
@@ -301,4 +305,6 @@ img {
     justify-content: space-evenly;
 
     margin-top: 2rem;
+
+    padding-bottom: 4rem;
 }

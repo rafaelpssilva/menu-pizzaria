@@ -9,7 +9,7 @@ function Home() {
     const productsReturn = dataProducts.map(
         ({ id, title, price, image, category }) =>
             selectedFilter === "" ? (
-                <Fade top>
+                <Fade clear key={id}>
                     <div key={id + Math.random()} className="products">
                         <img src={image} alt="title" className="img-product" />
                         <p className="name-product">{title}</p>
@@ -18,7 +18,7 @@ function Home() {
                 </Fade>
             ) : (
                 selectedFilter.toLowerCase() === category && (
-                    <Fade top>
+                    <Fade clear key={id}>
                         <div key={id + Math.random()} className="products">
                             <img
                                 src={image}

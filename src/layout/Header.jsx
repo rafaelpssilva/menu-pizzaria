@@ -5,6 +5,8 @@ import WhatsappIcon from "../assests/icons/WhatsappIcon";
 import MenuMobile from "./MenuMobile";
 import MenuIcon from "../assests/icons/MenuIcon";
 
+import Fade from "react-reveal/Fade";
+
 function Header() {
     const [openMenu, setOpenMenu] = React.useState(false);
 
@@ -57,7 +59,9 @@ function Header() {
             )}
 
             <div className="title-message">
-                <h2>{introductoryMessage()}</h2>
+                <Fade left>
+                    <h2>{introductoryMessage()}</h2>
+                </Fade>
             </div>
         </header>
     );
