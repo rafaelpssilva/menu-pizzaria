@@ -17,7 +17,6 @@ function Home() {
             ) : (
                 selectedFilter.toLowerCase() === category && (
                     <div key={id + Math.random()} className="products">
-                        {selectedFilter === "Burger" && <div>p</div>}
                         <img src={image} alt="title" className="img-product" />
                         <p className="name-product">{title}</p>
                         <p className="price-product">R$ {price}</p>
@@ -42,15 +41,7 @@ function Home() {
             <h3 className="section-selected">
                 {selectedFilter ? selectedFilter : "Pizza"}
             </h3>
-            <div className="box-products">
-                {productsReturn}
-                {(selectedFilter === "Burger" && <>{message}</>) ||
-                    (selectedFilter === "Drink" && (
-                            <p class="coming-soon">Coming soon...</p>
-                        ) && <>{message}</>) ||
-                    (selectedFilter === "Potato" && <>{message}</>) ||
-                    (selectedFilter === "Veggies" && <>{message}</>)}
-            </div>
+            <div className="box-products">{productsReturn}</div>
         </section>
     );
 }

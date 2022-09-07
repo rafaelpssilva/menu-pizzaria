@@ -21,7 +21,7 @@ function Navbar() {
             icon: <DrinkIcon />,
         },
         {
-            title: "Potato",
+            title: "Fries",
             icon: <FrenchFriesIcon />,
         },
         {

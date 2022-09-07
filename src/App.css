@@ -201,8 +201,14 @@ img {
     border-radius: 0.7rem;
 }
 
-#home .box-products .products img {
+#home .box-products .products .img-product {
     width: 100%;
+    height: 9rem;
+
+    object-fit: fill;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 #home .box-products .products .name-product {
