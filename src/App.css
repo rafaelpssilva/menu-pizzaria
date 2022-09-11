@@ -184,6 +184,10 @@ img {
 
 /* HOME */
 
+#home {
+    position: relative;
+}
+
 #home h3 {
     font-weight: 500;
     font-size: 3.2rem;
@@ -232,29 +236,6 @@ img {
     color: var(--third-color);
     font-weight: 500;
     font-size: 1.2rem;
-}
-
-.coming-soon {
-    color: #232323;
-    font-size: 2rem;
-    display: block;
-    line-height: 5rem;
-}
-
-.entre-em-contato a {
-    color: #272727;
-    font-size: 1.5rem;
-    display: block;
-    padding-bottom: 4vh;
-    transition: 0.5s;
-    text-decoration: underline 0.1rem;
-
-    margin-bottom: 15vh;
-}
-
-.entre-em-contato a:hover {
-    color: #f66141;
-    text-decoration: underline 0.2rem;
 }
 
 /* Footer */
